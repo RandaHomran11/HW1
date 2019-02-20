@@ -13,15 +13,12 @@
         <javac srcdir="${src.java.dir}" destdir="${result.javaclasses.dir}" debug="true" includeantruntime="false">
         </javac>
    </target>
-</fileset>
-</jar>
 <!-- comment make jar or executable procedure -->
 <target name="jar" depends="compile">
    <jar destfile="${result.jar.file}">
     <fileset dir="${result.javaclasses.dir}">
     
     </target>
-    </project>
 
    
 <path id="NecessaryLibraries">
@@ -60,6 +57,11 @@
             
         </junit>
     </target>
+
+      
+ </fileset>
+</jar>
+ </project>
 
     
   
